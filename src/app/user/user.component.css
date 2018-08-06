@@ -1,0 +1,25 @@
+.t1{
+
+    color: blueviolet;
+    font: 100;
+}
+
+.error{
+    color: brown;
+    font-size: 3em
+}
+
+.success{
+    color: green;
+    font-size: 3em
+}
+
+.tile{
+    background-color:rgb(224, 195, 217);
+    backface-visibility: visible;
+}
+
+.t2{
+    color: blue;
+    font-style: italic;
+}

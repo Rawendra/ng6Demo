@@ -1,0 +1,43 @@
+<p>
+{{name}}
+</p>
+<!--
+<input type="text" id="t1" value="Rawendra">
+
+<input type="text" id="{{t2}}" value="someother value">
+
+<input type="text" [id]="myId" value="rawendra">
+
+<input type="text" [id] ='myId2' value="rawenda">
+
+<input type="text" id="t3" [disabled]="isDisbaled" value="rawendra">
+
+<input type="email" id="email" bind-disabled="!isDisabled" value="Maharashtra">
+
+<input type="checkbox" id="r1" bind-value="email">
+
+-->
+Name:<input type="text" #i1 />
+<br>
+<button type="button" (click)="logMessage(i1.value)">LogMessage</button> 
+ 
+{{message}}
+
+<p>
+    Data from parent:
+    {{employee.id}}&nbsp;
+    {{employee.name}}&nbsp;
+    {{employee.salary}}
+
+</p>
+
+
+<p>
+
+    <button type="button" (click)="toParent(employee)">CLick to send data to Parent</button>
+</p>
+
+<p *ngFor="let e of employees,index as i">
+    {{i+1}} &nbsp;{{e.id}} &nbsp;&nbsp;{{e.name}} &nbsp;&nbsp;{{e.salary}}
+
+</p>
